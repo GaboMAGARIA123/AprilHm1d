@@ -1,10 +1,120 @@
+* {
+    padding: 0;
+}
+
 body {
-    background-color: #fff;
+    background-color: #f9f8fa;
     font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
     padding: 20px;
-};
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+}
 
-.product-list {
-    background-color: #bababa;
-};
+.modal-content label {
+    display: block;
+    font-size: 14px;
+}
 
+.modal-content input, textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px 0;
+}
+
+.btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.modal-content .btn {
+    width: 100%; 
+}
+
+.hidden {
+    display: none;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.Product-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 275px;
+    height: auto;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.Price {
+    color: rgba(255, 0, 0, 0.5);
+    font-size: larger;
+}
+
+.Description {
+    margin-top: 10px;
+    color: rgba(135, 135, 135, 0.5);
+    font-size: smaller;
+}
+
+.list {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: 100%; 
+    padding: 20px; 
+}
