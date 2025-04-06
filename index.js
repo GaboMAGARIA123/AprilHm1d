@@ -30,8 +30,6 @@ const fetchItems = async () => {
                 document.getElementById("productList").appendChild(div);
 
             });
-        } else {
-            console.error("Error fetching items:", response.statusText);
         }
 };
 
@@ -42,12 +40,9 @@ fetchItems();
 //     fetch
 // });
 
-deleteBtn.addEventListener("click", function () {
-    fetch('http://localhost:3000/api/products', {
-        method: 'DELETE',
-    })
+// deleteBtn.addEventListener("click", function () {
  
-});
+// });
 
 modalBtn.addEventListener("click", async function () {
     const div = document.createElement("div");
