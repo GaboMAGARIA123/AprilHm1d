@@ -52,7 +52,7 @@ modalBtn.addEventListener("click", async function () {
     div.innerHTML = `
     <img src="${document.getElementById("productImage").value}" alt="Product Image">
     <h2>${document.getElementById("productName").value}</h2>
-    <span class="Price">${document.getElementById("productPrice").value}</span>
+    <span class="Price">$${document.getElementById("productPrice").value}</span>
     <span class="Description">${document.getElementById("productDescription").value}</span>
     <div class="btns">
         <button id="editBtn">Edit</button>
@@ -83,7 +83,11 @@ modalBtn.addEventListener("click", async function () {
         }
     });
     if (response.ok) {
+        productModal.style.display = "none";
+        document.getElementById("productList").innerHTML = "";
         fetchItems();
+    } else {
+        console.error("Error creating product:", response.statusText);
     }
 });
 
