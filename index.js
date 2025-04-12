@@ -86,8 +86,6 @@ modalBtn.addEventListener("click", async function () {
         productModal.style.display = "none";
         document.getElementById("productList").innerHTML = "";
         fetchItems();
-    } else {
-        console.error("Error creating product:", response.statusText);
     }
 });
 

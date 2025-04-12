@@ -131,3 +131,21 @@ body {
     margin-top: 10px;
     display: flex;
 }
+
+#editBtn {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#deleteBtn {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
