@@ -21,7 +21,7 @@ const fetchItems = async () => {
 
                 div.innerHTML = ` <img src="${item.image}" alt="Product Image">
                 <h2>${item.name}</h2>
-                <span class="Price">${item.price}</span>
+                <span class="Price">$${item.price}</span>
                 <span class="Description">${item.description}</span>
             <div class="btns">
                 <button id="editBtn">Edit</button>
