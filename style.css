@@ -141,6 +141,10 @@ body {
     cursor: pointer;
 }
 
+#editBtn:hover {
+    background-color: #2980b9;
+}
+
 #deleteBtn {
     padding: 10px;
     background-color: #e74c3c;
@@ -148,4 +152,8 @@ body {
     border-radius: 8px;
     border: none;
     cursor: pointer;
+}
+
+#deleteBtn:hover {
+    background-color: #c0392b;
 }
