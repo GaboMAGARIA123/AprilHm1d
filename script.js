@@ -40,9 +40,9 @@ fetchItems();
 //     fetch
 // });
 
-// deleteBtn.addEventListener("click", function () {
- 
-// });
+deleteBtn.addEventListener("click", async function () {
+    
+});
 
 modalBtn.addEventListener("click", async function () {
     const div = document.createElement("div");
